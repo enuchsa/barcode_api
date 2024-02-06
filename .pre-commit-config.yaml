@@ -1,0 +1,16 @@
+repos:
+-   repo: local
+    rev: v2.3.0
+    hooks:
+    -   id: pylint
+    -   name: pylint
+    -   language: system
+    -   types: [python]
+    -   args:
+            [
+              "-rn",
+              "-sn",
+              "--rcfile=.pylint",
+              "--load-plugins=pylint.extensions.docparams",
+            ]
+
